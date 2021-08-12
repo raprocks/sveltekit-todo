@@ -10,7 +10,7 @@ export type TodoStore = {
 	update: Writable<Array<TodoType>>['update'];
 	add: (newTodo: TodoType) => void;
 	delete: (id: TodoType['id']) => void;
-	updateStatus: (id: TodoType['id']) => void;
+	updateStatus: () => void;
 };
 export function createTodoStore(default_val: Array<TodoType>): TodoStore {
 	const { set, subscribe, update } = writable<Array<TodoType>>(default_val);
@@ -27,7 +27,7 @@ export function createTodoStore(default_val: Array<TodoType>): TodoStore {
 				return newList;
 			});
 		},
-		updateStatus: (id) => {
+		updateStatus: () => {
 			update((old) => {
 				return old;
 			});
