@@ -19,18 +19,14 @@
 	>
 	{#each todos as todo (todo.id)}
 		<li>
-			<Todo
-				{todo}
-				on:updateStatus={(e) => updateStatus(e.detail.todo.id)}
-				deleteFunc={() => deleteFunc(todo.id)}
-			/>
+			<Todo {todo} on:updateStatus={() => updateStatus()} deleteFunc={() => deleteFunc(todo.id)} />
 		</li>
 	{/each}
 </ul>
 
-<style lang="scss">
-	// ul {
-	// 	width: 100%;
-	// 	list-style-type: none;
-	// }
-</style>
+<!-- <style lang="scss">
+	ul {
+		width: 100%;
+		list-style-type: none;
+	}
+</style> -->

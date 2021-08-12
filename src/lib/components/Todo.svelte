@@ -6,7 +6,7 @@
 	import { createEventDispatcher } from 'svelte';
 	const dispatch = createEventDispatcher();
 	export let todo: TodoType;
-	function updateStatus(e) {
+	function updateStatus() {
 		todo.isCompleted = !todo.isCompleted;
 		dispatch('updateStatus', {
 			todo
@@ -27,18 +27,18 @@
 	<button on:click={deleteFunc}>Delete</button>
 </div>
 
-<style lang="scss">
-	// .done {
-	// 	background-color: red;
-	// }
-	// .todo {
-	// 	display: flex;
-	// 	justify-content: space-between;
-	// 	align-items: center;
-	// 	border: 1px dotted beige;
-	// 	#todostatus {
-	// 		width: 18px;
-	// 		height: 18px;
-	// 	}
-	// }
-</style>
+<!-- <style lang="scss">
+	.done {
+		background-color: red;
+	}
+	.todo {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border: 1px dotted beige;
+		#todostatus {
+			width: 18px;
+			height: 18px;
+		}
+	}
+</style> -->

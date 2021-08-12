@@ -6,21 +6,22 @@
 	</ul>
 </nav>
 
-<style lang="scss">
-	// nav {
-	// 	display: flex;
-	// 	margin: 0.5rem 0rem;
-	// 	padding: 0rem 4rem;
-	// 	ul {
-	// 		padding-inline-start: 0px;
-	// 		display: flex;
-	// 		justify-content: space-around;
-	// 		list-style-type: none;
-	// 		width: 100%;
-	// 		a {
-	// 			font-size: 2rem;
-	// 			color: beige;
-	// 		}
-	// 	}
-	// }
-</style>
+<!-- <style lang="scss">
+	nav {
+		display: flex;
+		margin: 0.5rem 0rem;
+		padding: 0rem 4rem;
+		ul {
+			padding-inline-start: 0px;
+			display: flex;
+			justify-content: space-around;
+			list-style-type: none;
+			width: 100%;
+			a {
+				font-size: 2rem;
+				color: beige;
+			}
+		}
+	}
+	
+</style> -->
