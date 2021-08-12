@@ -1,7 +1,3 @@
-<script context="module">
-	console.log('hi');
-</script>
-
 <script lang="ts">
 	import TodoList from '$lib/components/TodoList.svelte';
 	import { createTodoStore } from '$lib/stores/stores';
@@ -13,7 +9,6 @@
 			defaultval = JSON.parse(localStorage.getItem('todos'));
 		}
 	}
-	$: console.log(defaultval);
 	const store = createTodoStore(defaultval || []);
 	// store.subscribe((value) => {});
 	if (browser) {
