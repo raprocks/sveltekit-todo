@@ -11,11 +11,9 @@
 	}
 	const store = createTodoStore(defaultval || []);
 	// store.subscribe((value) => {});
-	if (browser) {
-		store.subscribe((value) => {
-			value && localStorage.setItem('todos', JSON.stringify($store));
-		});
-	}
+	store.subscribe((value) => {
+		browser && value && localStorage.setItem('todos', JSON.stringify($store));
+	});
 </script>
 
 <TodoList
